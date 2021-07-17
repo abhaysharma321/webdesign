@@ -13,12 +13,12 @@ body{
 
 .nav{
 	width: 100%;
-	height: 60px;
+	height: 65px;
 	background: black;
 	opacity: 0.8;
 	color: white;
 	font-size: 1em;
-	display: flex;
+	display:flex;
 	flex-direction: row;
 	position: sticky;
 	top: 0;
@@ -34,15 +34,17 @@ h1{
   	display: inline;
   	padding-right: 0.5em;
   }
-
-.logo{
+  .logo{
 	width: 100%;
 	font-family: 'Cinzel', serif;
 	padding-top: 1em;
 	font-weight:bold;
 }
+
 .navbar-items {
 	width: 100%;
+	display:flex;
+	flex-direction: row;
 	text-align: end;
 	padding-top: 22px;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -155,7 +157,7 @@ h3{
 
 /* Media queries */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
 	
 	.nav{
 		flex-direction: column;
@@ -166,6 +168,10 @@ h3{
 	.navbar-items{
 		text-align: center;
 		flex-direction: column;
+		padding-bottom: 5px;
+	}
+	.nav-item{
+		padding-bottom: 4px;
 	}
 
 
@@ -184,5 +190,35 @@ h3{
         transform: scale(0.8);
 }
   }
+
+@media screen and (min-width: 769px ) and (max-width: 1200px) {
+	.nav{
+		flex-direction: column;
+		height: auto;
+		text-align: center;
+	}
+	.navbar-items{
+		flex-direction: row;
+		justify-content: center;
+		padding-bottom: 5px;
+	}
+	
+
+	.menu-items{
+		flex-direction: row;
+		width: 100%;
+	}
+	.item-tile{
+		flex-direction: column;
+		width: 100%;
+	}
+	
+	.item-tile:hover
+{
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
+}
   
  
