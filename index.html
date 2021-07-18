@@ -1,19 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhay Sharma</title>
-    <link rel="stylesheet" href="test.css">
-</head>
-<body>
-    <div>
-        <h2>Class Work
-        <a href="AS Interiors.html">A S Interiors</a>
-        </h2><br>
-    </div>
+h2{
+    text-align: center;
+}
+*{
+   margin: 0; 
+   padding: 0.5em;
+}
 
+.container{
+    width: 100%;
+    height: 100%;
+    margin-top: 0.5em;
+    float:left;
+    box-sizing: border-box;
+}
+.row{
+    width: 100%;
+	height: 100%;
+	border: 2px solid red;
+	float: left;
+	box-sizing: border-box;
+	padding: 1em;
+}
+
+.col{
+    width: 30%;
+    height: 1200px;
+    position: relative;
+    border: 1px solid black;
+    background-color: cadetblue;
+    text-align: center;
+    padding: 0.5em;
+    padding-top: 1.5em;
+    margin: 0.5em;
+    float: left;
+}
+
+.gotop{
+    text-align: end;
+    padding-right: 1.5em;
     
-</body>
-</html>
+}
+
+@media screen and (max-width: 768px){
+	.container{
+		width: 100%;
+	}
+	.row{
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 769px ) and (max-width: 1200px){
+	.container{
+		width: 100%;
+	}
+}
