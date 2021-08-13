@@ -150,7 +150,13 @@ h3{
 	box-sizing: border-box;
 	margin: 10px 30px;
 }
-
+.feedbox{
+	align-items: center;
+	box-sizing: border-box;
+	width: 55%;
+	margin: 1em;
+	padding: 1em;
+}
 
 
 
